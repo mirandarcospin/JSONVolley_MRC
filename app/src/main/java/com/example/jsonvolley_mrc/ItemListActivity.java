@@ -81,7 +81,7 @@ public class ItemListActivity extends AppCompatActivity {
     }
 
     private void testVolley() {
-        String url = "https://api.jsonbin.io/b/5f726a107243cd7e8245d58b";  // THAT should be in a strings.xml file!
+        String url = getString(R.string.json_url);  // THAT should be in a strings.xml file!
 
         // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(this);

@@ -55,7 +55,7 @@ public class DummyContent extends AppCompatActivity {
     }
 
     private void jsonParse(){
-        String url = "https://api.jsonbin.io/b/5f7bcaff302a837e95754641";
+        String url = getString(R.string.json_url);
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
@@ -67,9 +67,6 @@ public class DummyContent extends AppCompatActivity {
                     for(int i = 0; i < jsonArray.length(); i++){
                         JSONObject coffee = jsonArray.getJSONObject(i);
 
-//                        String country = coffee.getString("country");
-//                        int number = coffee.getInt("number");
-//                        String des = coffee.getString("description");
                         country = coffee.getString("country");
                         number = coffee.getInt("number");
                         des = coffee.getString("description");

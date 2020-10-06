@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">JSONVolley_MRC</string>
     <string name="title_item_detail">Item Detail</string>
+    <string name="json_url">https://api.jsonbin.io/b/5f7bcaff302a837e95754641</string>
 </resources>
